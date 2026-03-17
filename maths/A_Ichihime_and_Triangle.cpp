@@ -5,17 +5,8 @@ using namespace std;
 
 void solve() {
 
-    int n; cin>>n;
-    string s; cin>>s;
-
-    int rooms=n;
-    for (int i=0; i<n; i++){
-
-        if (s[i]=='1') rooms = max(rooms,2*max(i+1,n-i));
-
-    }
-
-    cout<<rooms<<endl;
+    int a,b,c,d; cin>>a>>b>>c>>d;
+    cout<<b<<" "<<c<<" "<<c<<endl;
 
 }
 
