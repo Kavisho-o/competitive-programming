@@ -2,27 +2,22 @@
 using namespace std;
 
 #define ll long long
+#define pb push_back
 
 void solve() {
 
-    int n,m; cin>>n>>m;
+    ll n; cin>>n;
 
-    int ans=0;
-    
-    if (m%2==0) {
+    ll i=1;
+    int cnt=0;
 
-        ans = (m/2)*n;
+    while (i<=n){
 
-    }
-
-    else{
-
-        int add = n%2==0 ? n/2 : n/2 + 1;
-        ans = (m/2)*n + add;
+        cnt++; n--; i++;
 
     }
 
-    cout<<ans<<endl;
+    cout<<cnt<<endl;
 
 }
 
